@@ -4,7 +4,6 @@ void main() {
   runApp(HouseBuyingApp());
 }
 
-// Stateless Widget for the Home Page
 class HouseBuyingApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,6 @@ class HouseBuyingApp extends StatelessWidget {
   }
 }
 
-// Stateful Widget for Home Page with gradient background and modern shapes
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -72,7 +70,6 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Stack(
         children: [
-          // Gradient background
           Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -82,7 +79,6 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          // Abstract modern shapes
           Positioned(
             top: -50,
             left: -50,
@@ -131,7 +127,6 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-// Stateless Widget for House List Page with dummy images from Picsum
 class HouseListPage extends StatelessWidget {
   final List<Map<String, String>> houses = [
     {
@@ -185,7 +180,6 @@ class HouseListPage extends StatelessWidget {
   }
 }
 
-// Stateful Widget for House Details Page with scrollable content
 class HouseDetailsPage extends StatefulWidget {
   final Map<String, String> house;
 
